@@ -15,7 +15,7 @@ public class Exercicio01 {
     public static void main(String[] args) {
      Scanner teclado = new Scanner( System.in);
      
-     // sout
+     // sout + tab
      System.out.println("Digite seu nome: ");
      String nome = teclado.next();
      
