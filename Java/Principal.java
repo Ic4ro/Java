@@ -1,18 +1,22 @@
 
 package com.mycompany.principal;
 
-
 public class Principal {
 
     public static void main(String[] args) {
-        Clientes cliente = new Clientes();
+        Livros livro1 = new Livros("Cobrakai", "Pedro", 350, 200);
+        livros livro2 = new Livros("Amor e anarquia", "ronaldo", 250, 200);
         
-        //cliente.nome = "Marta";
-        cliente.setNome("Marta");
-        //cliente.idade = 20;
-        cliente.setIdade(20);
         
-        System.out.println("Nome: " + cliente.getNome());
-        System.out.println("Idade: " + cliente.getIdade());
+       
+        System.out.println("Título: " + livro1.getTitulo());
+        System.out.println("Autor: " + livro1.getAutor());
+        System.out.println("Salário: " + livro1.getNumeroDePaginas());
+        System.out.println("Preço: " + livro1.getPreco());
+        
+        System.out.println("Título: " + livro2.getTitulo());
+        System.out.println("Autor: " + livro2.getAutor());
+        System.out.println("Salário: " + livro2.getNumeroDePaginas());
+        System.out.println("Preço: " + livro2.getPreco());
     }
 }
