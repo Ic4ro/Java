@@ -1,22 +1,20 @@
 
-package com.mycompany.principal;
+package com.mycompany.mavenproject5;
 
 public class Principal {
 
     public static void main(String[] args) {
-        Livros livro1 = new Livros("Cobrakai", "Pedro", 350, 200);
-        livros livro2 = new Livros("Amor e anarquia", "ronaldo", 250, 200);
+        // Instanciando um objeto.
+        Funcionarios  funcionario = new Funcionarios("Marta", 35, 1500);   
         
+       // funcionario.setNome("Marta");
+       // funcionario.setIdade(35);
+       // funcionario.setSalario(1500);
         
-       
-        System.out.println("Título: " + livro1.getTitulo());
-        System.out.println("Autor: " + livro1.getAutor());
-        System.out.println("Salário: " + livro1.getNumeroDePaginas());
-        System.out.println("Preço: " + livro1.getPreco());
+        System.out.println("Nome: " + funcionario.getNome());
+        System.out.println("Idade: " + funcionario.getIdade());
+        System.out.println("Salário: " + funcionario.getSalario());
         
-        System.out.println("Título: " + livro2.getTitulo());
-        System.out.println("Autor: " + livro2.getAutor());
-        System.out.println("Salário: " + livro2.getNumeroDePaginas());
-        System.out.println("Preço: " + livro2.getPreco());
+        //Botão direito do mouse insert code.
     }
 }
